@@ -1,0 +1,80 @@
+.calendar {
+    /* Add your styling here */
+    width: 90%;
+    margin: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #ccc;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f4f4f4;
+  }
+  
+  .weekdays, .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+  }
+  
+  .date {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    width: 50%; /* Adjust as necessary */
+  }
+  
+  .modal-content .close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  .modal-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-content form label {
+    margin-bottom: 10px;
+  }
+  
+  .modal-content form input {
+    margin-top: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .modal-content form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  /* Add more styling as needed */
+  

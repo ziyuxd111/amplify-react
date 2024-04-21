@@ -1,0 +1,61 @@
+/* src/components/RoleSelection.css */
+
+.role-selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('roleselection.png'); /* Keep your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px;
+}
+
+.role-selection-container h2 {
+  font-size: 24px; /* Set size as per your design preference */
+  color: #333; /* A dark grey color for the text */
+  margin-bottom: 30px; /* Space between title and buttons */
+}
+
+.role-selection-container button {
+  margin: 10px;
+  padding: 10px 40px; /* Adjust padding to control the button size */
+  width: 200px; /* Set a fixed width for the buttons */
+  font-size: 18px; /* Slightly larger font size for readability */
+  color: #fff; /* White text color */
+  background-color: #4facfe; /* A nice sky blue shade */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  outline: none; /* Remove the outline to make it look better */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s, transform 0.1s; /* Smooth transitions for hover effects */
+}
+
+.role-selection-container button:hover {
+  background-color: #0056b3; /* Darken button color on hover */
+  transform: scale(1.05); /* Slightly grow the button on hover */
+}
+
+.role-selection-container button:active {
+  background-color: #003f7f; /* Even darker green when the button is clicked */
+  transform: scale(0.95); /* Slightly shrink the button when clicked */
+}
+
+@media (max-width: 768px) {
+  .role-selection-container h2 {
+    font-size: 20px; /* Smaller font size for mobile */
+  }
+  
+  .role-selection-container button {
+    padding: 8px 20px; /* Smaller padding for mobile */
+    font-size: 16px; /* Smaller font size for mobile */
+    margin: 5px; /* Less margin for mobile */
+    width: auto; /* Auto width for flexible button size */
+  }
+}
+
+/* Add more styling as needed */

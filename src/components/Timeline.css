@@ -1,0 +1,45 @@
+/* Global Styles */
+
+
+/* Styles for the hover images */
+.hover-image {
+  position: absolute;
+  width: 300px; /* Or whatever size you want */
+  height: auto; /* Maintain aspect ratio */
+  top: 50px; /* Distance from the top edge of the nearest positioned ancestor */
+  left: 50px; /* Distance from the left edge of the nearest positioned ancestor */
+}
+
+/* Display the image when its corresponding spot is hovered */
+.spot-1:hover + .hover-image-1,
+.spot-2:hover + .hover-image-2,
+.spot-3:hover + .hover-image-3,
+.spot-4:hover + .hover-image-4 {
+  display: block; /* Show the image */
+}
+
+/* Specific styles for each image based on its spot position */
+.hover-image-1 { top: 480px; left: 430px; }
+.hover-image-2 { top: 200px; left: 700px; }
+.hover-image-3 { top: 480px; left: 160px; }
+.hover-image-4 { top: 100px; left: 940px; }
+
+/* Example positions, adjust according to the actual image and spots */
+.spot-3 { top: 480px; left: 160px; }
+.spot-2 { top: 480px; left: 700px; }
+.spot-4 { top: 480px; left: 940px; }
+.spot-1 { top: 480px; left: 430px; }
+
+.spot {
+  position: absolute;
+  /* Use a semi-transparent background color for visibility while positioning */
+  background-color: transparent;
+  /* Set to 'transparent' once positioned correctly */
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10; /* Above the image */
+  /* Adjust the size to cover the clickable area */
+  width: 75px;
+  height: 75px;
+}
+

@@ -1,0 +1,50 @@
+/* Charts.css */
+.chart-container {
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.average {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Specific styles for the Steps chart */
+.steps-chart {
+  background: linear-gradient(to bottom, #ffa726, #fb8c00);
+  color: white;
+}
+
+/* Specific styles for the Weight chart */
+.weight-chart {
+  background: linear-gradient(to bottom, #ffeb3b, #fdd835);
+  color: white;
+}
+
+/* Specific styles for the Heart Rate chart */
+.heart-rate-chart {
+  background: linear-gradient(to bottom, #29b6f6, #039be5);
+  color: white;
+}
+
+/* Additional styling for the chart canvas */
+.chart {
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+}

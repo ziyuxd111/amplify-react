@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0; /* Reset default padding */
+  font-family: Arial, sans-serif;
+  background: #fff;
+  text-align: center;
+  display: flex; /* Use flex to center the content vertically */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center vertically */
+  min-height: 100vh; /* Full viewport height */
+}
+
+.role-selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('roleselection.png'); /* Keep your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px;
+}
+
+.dashboard-title {
+  font-size: 1.5em; /* Use em units for scalability */
+  margin-bottom: 1em;
+}
+
+.box-container {
+  border: 2px dashed #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%; /* Responsive width */
+  max-width: 300px; /* Maximum width */
+  cursor: pointer;
+}
+
+.image-upload-label {
+  display: block;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px auto;
+  cursor: pointer;
+  width: 80%; /* Responsive width */
+  max-width: 250px; /* Maximum width */
+}
+
+/* Adjust sizes for smaller devices */
+@media (max-width: 768px) {
+  .dashboard-container {
+    width: 95%; /* Allow for more width on smaller devices */
+  }
+
+  .box-container,
+  .image-upload-label {
+    width: 90%; /* Adjust width to be more responsive */
+  }
+}
+
+.image-upload-button {
+  background-color: #4facfe;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  width: 50%; /* Use a percentage for responsiveness */
+  max-width: 200px; /* Maximum width */
+  margin: 1em auto; /* Center horizontally with automatic margins */
+}
+
+.image-upload-button:hover {
+  background-color: #0056b3;
+}
+
+.image-upload-button:active {
+  background-color: #004080;
+}
+
+.img-display-before,
+.img-display-after {
+  max-width: 100%; /* Make sure the image is not wider than its container */
+  max-height: 300px; /* Set a maximum height for the image */
+  margin-bottom: 15px;
+  border-radius: 5px;
+  object-fit: contain; /* This makes the image scale to fit the container */
+}
+
+/* Optional: Add a container for the image that controls the aspect ratio */
+.image-container {
+  width: 100%; /* Use the full width of its parent */
+  max-height: 300px; /* Maximum height for the image container */
+  display: flex; /* Use flex to center the image inside */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  overflow: hidden; /* Hide any overflow */
+  border: 1px solid #ddd; /* Optional: add a border to the container */
+  border-radius: 5px; /* Round the corners as per your design */
+}
+
+
+.notification {
+  position: fixed;
+  top: 20px; /* Adjust as necessary */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1ca725; /* Positive green color */
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 1001; /* Higher than other content */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
